@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Lightbulb_1 = require("./Lightbulb");
+var LightOnCommand_1 = require("./LightOnCommand");
+var LightOffCommand_1 = require("./LightOffCommand");
+var light = new Lightbulb_1.LightBulb();
+var lightOnCommand = new LightOnCommand_1.LightOnCommand(light);
+var lightOffCommand = new LightOffCommand_1.LightOffCommand(light);
+lightOnCommand.execute();
+lightOffCommand.execute();
